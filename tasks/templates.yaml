@@ -1,0 +1,9 @@
+---
+# task for hadenlabs.xvfb
+
+- name: copy templates
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items: _xvfb.templates
+  when: _xvfb.templates is defined

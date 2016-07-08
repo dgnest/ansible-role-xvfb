@@ -1,0 +1,13 @@
+---
+# environment file for hadenlabs.xvfb
+
+- name: Create files xvfb
+  sudo: yes
+  file:
+  
+    path: "{{ item.path }}"
+    state: "{{ item.state }}"
+    owner: "{{ item.owner }}"
+  
+  with_items: _xvfb_create_files
+  when: _xvfb_create_files is defined
