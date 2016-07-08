@@ -1,0 +1,42 @@
+---
+
+# task file for hadenlabs.xvfb
+
+- name: Update package repositories
+  sudo: yes
+  apt:
+    update_cache: True
+  when: ansible_distribution == "Ubuntu"
+  tags:
+    - apt
+    - update_cache
+
+- name: Install xvfb package dependencies
+  sudo: yes
+  apt:
+  
+    name: "{{ item }}"
+  
+    state: present
+  register: install_xvfb_package_dependencies
+  when: _xvfb_package_dependencies is defined
+  with_items: _xvfb_package_dependencies
+  tags:
+    - apt
+    - dependencies
+- debug: var=install_xvfb_package_dependencies.stdout_lines
+
+- name: Install xvfb dependencies
+  sudo: yes
+  apt:
+  
+    name: "{{ item.name }}"
+  
+    state: present
+  register: install_xvfb_dependencies
+  when: _xvfb_dependencies is defined
+  with_items: _xvfb_dependencies
+  tags:
+    - apt
+    - dependencies
+- debug: var=install_xvfb_dependencies.stdout_lines

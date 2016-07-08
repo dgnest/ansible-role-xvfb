@@ -1,0 +1,12 @@
+---
+# vars file for hadenlabs.xvfb (Ubuntu specific)
+
+_xvfb_package_dependencies:
+  - build-essential
+
+_xvfb_dependencies:
+  - name: build-essential
+    version: 1.0.0
+
+_xfvb_packages:
+  - xvfb

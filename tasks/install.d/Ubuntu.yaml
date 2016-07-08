@@ -1,0 +1,14 @@
+---
+
+# task file for hadenlabs.xvfb
+
+- name: Ensure apt cache is up to date
+  apt:
+    update_cache: yes
+
+
+- name: Install xvfb dependencies
+  apt: name={{ item }} state=present update_cache=yes
+  with_items: _xvfb_packages
+  tags:
+    - xvfb
