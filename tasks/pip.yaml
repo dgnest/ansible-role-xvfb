@@ -1,0 +1,10 @@
+---
+# task for hadenlabs.xvfb
+
+- name: Install packages via pip xvfb
+  sudo: yes
+  
+  pip: name="{{ item.name }}" version="{{ item.version }}"
+  
+  when: xvfb_pip_dependencies is defined
+  with_items: xvfb_pip_dependencies
