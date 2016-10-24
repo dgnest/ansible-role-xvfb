@@ -1,9 +1,9 @@
 # Ansible Role ansible-role-xvfb
 
 <span class="badges" align="center">
-[![Build Status](https://travis-ci.org/hadenlabs/ansible-role-xvfb.svg)](https://travis-ci.org/hadenlabs/ansible-role-xvfb)
-[![Stories in Ready](https://badge.waffle.io/hadenlabs/ansible-role-xvfb.svg?label=ready&title=Ready)](http://waffle.io/hadenlabs/ansible-role-xvfb)
-[![GitHub issues](https://img.shields.io/github/issues/hadenlabs/ansible-role-xvfb.svg)](https://github.com/hadenlabs/ansible-role-xvfb/issues)
+[![Build Status](https://travis-ci.org/dgnest/ansible-role-xvfb.svg)](https://travis-ci.org/dgnest/ansible-role-xvfb)
+[![Stories in Ready](https://badge.waffle.io/dgnest/ansible-role-xvfb.svg?label=ready&title=Ready)](http://waffle.io/dgnest/ansible-role-xvfb)
+[![GitHub issues](https://img.shields.io/github/issues/dgnest/ansible-role-xvfb.svg)](https://github.com/dgnest/ansible-role-xvfb/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
 
@@ -13,7 +13,7 @@ This Ansible Role infuses antigravity, you are warned
 Install it with the following command:
 
 ```bash
-$ ansible-galaxy install hadenlabs.xvfb
+$ ansible-galaxy install dgnest.xvfb
 
 ```
 Requirements
@@ -29,7 +29,7 @@ Here is the list of all variables and their default values:
 
 ```yaml
     ---
-    # defaults file for hadenlabs.xvfb
+    # defaults file for dgnest.xvfb
 ```
 
 
@@ -46,7 +46,7 @@ To run this playbook with default settings, create a basic playbook like this:
 ```yaml
     - hosts: servers
       roles:
-        - hadenlabs.xvfb
+        - dgnest.xvfb
 ```
 
 
@@ -70,7 +70,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ---
 
-Made with ♥️ and ☕️ by hadenlabs and our community.
+Made with ♥️ and ☕️ by dgnest and our community.
 
 <!-- Other -->
 
