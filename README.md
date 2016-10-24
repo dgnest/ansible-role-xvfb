@@ -2,7 +2,6 @@
 
 <span class="badges" align="center">
 [![Build Status](https://travis-ci.org/dgnest/ansible-role-xvfb.svg)](https://travis-ci.org/dgnest/ansible-role-xvfb)
-[![Stories in Ready](https://badge.waffle.io/dgnest/ansible-role-xvfb.svg?label=ready&title=Ready)](http://waffle.io/dgnest/ansible-role-xvfb)
 [![GitHub issues](https://img.shields.io/github/issues/dgnest/ansible-role-xvfb.svg)](https://github.com/dgnest/ansible-role-xvfb/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
@@ -64,15 +63,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [author][link-author]
+Made with :heart: ️:coffee:️ and :pizza: by [dgnest][link-company].
+
 - [All Contributors][link-contributors]
-
-
----
-
-Made with ♥️ and ☕️ by dgnest and our community.
 
 <!-- Other -->
 
-[link-author]: https://github.com/luismayta
-[link-contributors]: contributors
+[link-luis]: https://github.com/luismayta
+[link-contributors]: AUTHORS
+[link-company]: https://github.com/dgnest
