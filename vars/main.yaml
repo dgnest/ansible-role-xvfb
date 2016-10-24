@@ -1,16 +1,16 @@
 ---
 
-# vars file for hadenlabs.xvfb
+# vars file for dgnest.xvfb
 
-# _hadenlabs.xvfb_create_files:
-  
+# _dgnest.xvfb_create_files:
+
 #   - path: "{{ _path_dir }}"
 #     state: "directory"
 #     # group: "root"
 #     owner: "{{ user }}"
-  
 
-# _hadenlabs.xvfb:
+
+# _dgnest.xvfb:
 #   templates:
 #     - src: "default.j2"
-#       dest: {{ _hadenlabs.xvfb_file }}
+#       dest: {{ _dgnest.xvfb_file }}
