@@ -1,5 +1,5 @@
 ---
-# task for hadenlabs.xvfb
+# task for dgnest.xvfb
 
 - name: copy templates
   template:
